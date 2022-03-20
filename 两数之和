@@ -15,5 +15,5 @@ class Solution:
         for i in range(len(nums)):
             if target - nums[i] in dic:
                 return [dic[target-nums[i]],i]
-            dic[nums[i]] = i
-        return []
+            dic[nums[i]] = i#dic[nums[i]]表示nums[i]的索引是i
+    return []#全部循环完没有的话返回空
